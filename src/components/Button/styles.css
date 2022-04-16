@@ -1,0 +1,10 @@
+button{
+  background-color: transparent;
+  border: none;
+}
+
+button.selected{
+  font-size: 16px;
+  font-weight: bold;
+  color: blue;
+}
