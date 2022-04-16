@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import { PeriodContextProvider } from '../../context/ContextPeriod';
-import { TrackingCard } from '../TrackingCard';
+import { TrackingCardAll } from '../TrackingCardAll';
 import { UserCard } from '../UserCard';
 import './styles.css';
 
@@ -17,19 +17,27 @@ export const App = () => {
   return (
     <div id="app">
       <PeriodContextProvider>
-        <UserCard />
-        <section className="user-info">
-          {userInfo.map((info, index) => (
-            <TrackingCard info={info} key={String(info.title + index).replace(' ', '')} />
-          ))}
-        </section>
-        <div className="attribution">
+        <main className="container">
+          <UserCard />
+          <section className="user-tracking">
+            {userInfo.map((info, index) => (
+              <TrackingCardAll
+                info={info}
+                key={String(info.title + index).replace(' ', '')}
+                className={String(info.title + '-card')
+                  .toLowerCase()
+                  .replace(' ', '-')}
+              />
+            ))}
+          </section>
+        </main>
+        <footer className="attribution">
           Challenge by{' '}
           <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">
             Frontend Mentor
           </a>
           . Coded by <a href="#">Your Name Here</a>.
-        </div>
+        </footer>
       </PeriodContextProvider>
     </div>
   );

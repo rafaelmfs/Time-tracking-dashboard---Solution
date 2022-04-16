@@ -1,34 +1,29 @@
-/* eslint-disable react/prop-types */
-// import P from 'prop-types';
-import { useContext } from 'react';
-import { PeriodContext } from '../../context/ContextPeriod';
+import P from 'prop-types';
+import { PeriodList } from '../PeriodList';
 
-export const TrackingCard = ({ info }) => {
-  const { period } = useContext(PeriodContext);
-
-  return period == 'monthly' ? (
-    <div>
-      <h4>{info.title}</h4>
-      <h1>{info.timeframes.monthly.current}</h1>
-      <p> Last Month {info.timeframes.monthly.previous}</p>
+export const TrackingCard = ({ className, title, content, setPeriod, period }) => {
+  return (
+    <div className={className}>
+      <div className="card-info">
+        <header>
+          <h4>{title}</h4>
+          <PeriodList setPeriod={setPeriod} />
+        </header>
+        <div className="card-content">
+          <h1 className="card-value">{content.current}hrs</h1>
+          {period == 'daily' && <p className="prev-value">Yesterday - {content.previous}hrs</p>}
+          {period == 'weekly' && <p className="prev-value">Last Week - {content.previous}hrs</p>}
+          {period == 'monthly' && <p className="prev-value">Last Month - {content.previous}hrs</p>}
+        </div>
+      </div>
     </div>
-  ) : period == 'weekly' ? (
-    <div>
-      <h4>{info.title}</h4>
-      <h1>{info.timeframes.weekly.current}</h1>
-      <p> Last weeek {info.timeframes.weekly.previous}</p>
-    </div>
-  ) : period == 'daily' ? (
-    <div>
-      <h4>{info.title}</h4>
-      <h1>{info.timeframes.daily.current}</h1>
-      <p> Yesterday {info.timeframes.daily.previous}</p>
-    </div>
-  ) : (
-    <p> Not found</p>
   );
 };
 
-// TrackingCard.propTypes = {
-//   info: P.object.isRequired,
-// };
+TrackingCard.propTypes = {
+  className: P.string.isRequired,
+  title: P.string.isRequired,
+  period: P.string.isRequired,
+  content: P.object.isRequired,
+  setPeriod: P.func.isRequired,
+};

@@ -1,0 +1,130 @@
+.container {
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-card{
+  width: 20%;
+}
+
+.user-tracking{
+  width: 70%;
+  padding: 24px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  column-gap: 30px;
+  row-gap: 36px;
+}
+
+.user-tracking>div{
+  width: 280px;
+  height: 220px;
+  border-radius: 16px;
+
+  position: relative;
+
+  background-repeat: no-repeat;
+  background-position: 90% -5%;
+}
+
+.user-tracking .card-info{
+  height: 80%;
+
+  margin-top: 20%;
+  padding: 24px;
+
+  background-color: var(--darkBlue);
+
+  border-radius: 16px;
+
+}
+
+.user-tracking .card-info:hover{
+  background-color: var(--blue);
+  color: white;
+
+  cursor: pointer;
+  transition: 400ms;
+
+}
+
+.user-tracking header{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.user-tracking header ul{
+  position: absolute;
+  list-style: none;
+}
+
+
+.user-tracking .card-content{
+  margin-top: 10%;
+}
+
+.user-tracking .card-value{
+  font-size: 5.0rem;
+  font-weight: 300;
+}
+
+.user-tracking p.prev-value {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.6rem;
+}
+
+.select-period{
+  appearance: none;
+}
+
+.work-card{
+  background-color: var(--work);
+  background-image: url(../../../public/images/icon-work.svg);
+
+}
+
+.play-card{
+  background-color: var(--play);
+  background-image: url(../../../public/images/icon-play.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+
+}
+
+.study-card{
+  background-color: var(--study);
+  background-image: url(../../../public/images/icon-study.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+
+}
+
+.exercise-card{
+  background-color: var(--exercise);
+  background-image: url(../../../public/images/icon-exercise.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+
+}
+
+.social-card{
+  background-color: var(--social);
+  background-image: url(../../../public/images/icon-social.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+
+}
+
+.self-care-card{
+  background-color: var(--selfCare);
+  background-image: url(../../../public/images/icon-self-care.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+
+}
+
