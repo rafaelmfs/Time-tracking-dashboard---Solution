@@ -1,10 +1,24 @@
 button{
   background-color: transparent;
   border: none;
+  display: block;
+
+  font-size: 1.8rem;
+  margin: 16px 12px;
+  text-transform: capitalize;
+
+  color: rgba(255, 255, 255, 0.5);
+  transition: 400ms;
+}
+
+button:hover{
+  cursor: pointer;
+  color: #FFF;
+
 }
 
 button.selected{
-  font-size: 16px;
   font-weight: bold;
-  color: blue;
+  color: #FFF;
+
 }

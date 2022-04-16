@@ -2,6 +2,7 @@ import P from 'prop-types';
 import { useContext, useEffect, useState } from 'react';
 import { PeriodContext } from '../../context/ContextPeriod';
 import { TrackingCard } from '../TrackingCard';
+import './styles.css';
 
 export const TrackingCardAll = ({ info, className }) => {
   const { period } = useContext(PeriodContext);

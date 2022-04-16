@@ -1,0 +1,7 @@
+.user-card{
+  width: 100%;
+
+  background-color: var(--darkBlue);
+  border-radius: 16px;
+
+}

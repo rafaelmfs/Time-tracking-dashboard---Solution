@@ -1,0 +1,42 @@
+.user-tracking .card-info{
+  height: 80%;
+
+  margin-top: 20%;
+  padding: 24px;
+
+  background-color: var(--darkBlue);
+
+  border-radius: 16px;
+
+}
+
+.user-tracking .card-info:hover{
+  background-color: var(--blue);
+  color: white;
+
+  transition: 400ms;
+}
+
+.user-tracking header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.user-tracking .card-content{
+  margin-top: 12%;
+
+}
+
+.user-tracking .card-value{
+  font-size: 5.6rem;
+  font-weight: 300;
+
+}
+
+.user-tracking p.prev-value {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.6rem;
+
+}

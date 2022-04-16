@@ -18,7 +18,9 @@ export const App = () => {
     <div id="app">
       <PeriodContextProvider>
         <main className="container">
-          <UserCard />
+          <section className="user-section">
+            <UserCard />
+          </section>
           <section className="user-tracking">
             {userInfo.map((info, index) => (
               <TrackingCardAll

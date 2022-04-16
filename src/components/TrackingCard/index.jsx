@@ -1,5 +1,6 @@
 import P from 'prop-types';
 import { PeriodList } from '../PeriodList';
+import './styles.css';
 
 export const TrackingCard = ({ className, title, content, setPeriod, period }) => {
   return (

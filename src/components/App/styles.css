@@ -1,130 +1,100 @@
 .container {
   width: 100vw;
+  max-width: 1400px;
 
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
-.user-card{
+.user-section{
   width: 20%;
+  padding: 24px 0;
 }
 
-.user-tracking{
-  width: 70%;
-  padding: 24px;
+@media(max-width: 1355px){
 
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  column-gap: 30px;
-  row-gap: 36px;
+  .user-section{
+    width: 25%;
+  }
+  .user-tracking{
+    width: 70%;
+  }
+
+  .user-tracking>div{
+    width: 300px;
+  }
 }
 
-.user-tracking>div{
-  width: 280px;
-  height: 220px;
-  border-radius: 16px;
+@media(max-width: 995px){
 
-  position: relative;
+  .user-tracking{
+    width: 70%;
+  }
 
-  background-repeat: no-repeat;
-  background-position: 90% -5%;
+  .user-tracking>div{
+    width: 400px;
+    margin-bottom: 5%;
+  }
+
+  .user-section{
+    width: 35%;
+    margin-left: 5%;
+  }
 }
 
-.user-tracking .card-info{
-  height: 80%;
+@media(max-width: 720px){
+  .container {
+    flex-direction: column;
 
-  margin-top: 20%;
-  padding: 24px;
+  }
 
-  background-color: var(--darkBlue);
+  .user-section{
+    width: 80%;
+    margin: auto;
+  }
 
-  border-radius: 16px;
+  .user-section .user-info{
+    display: flex;
+    height: 160px;
+  }
 
-}
+  .user-info img{
+    margin-right: 5%;
+  }
 
-.user-tracking .card-info:hover{
-  background-color: var(--blue);
-  color: white;
+  .period-menu{
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
-  cursor: pointer;
-  transition: 400ms;
+  }
 
-}
+  .user-tracking{
+    width: 80%;
 
-.user-tracking header{
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 0;
+  }
 
-}
+  .user-tracking>div{
+    width: 100%;
+    height: 200px;
 
-.user-tracking header ul{
-  position: absolute;
-  list-style: none;
-}
+    margin-bottom: 10%;
+
+    background-position: 90% top;
+  }
+
+  .user-tracking .card-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
 
 
-.user-tracking .card-content{
-  margin-top: 10%;
-}
-
-.user-tracking .card-value{
-  font-size: 5.0rem;
-  font-weight: 300;
-}
-
-.user-tracking p.prev-value {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 1.6rem;
-}
-
-.select-period{
-  appearance: none;
-}
-
-.work-card{
-  background-color: var(--work);
-  background-image: url(../../../public/images/icon-work.svg);
-
-}
-
-.play-card{
-  background-color: var(--play);
-  background-image: url(../../../public/images/icon-play.svg);
-  background-repeat: no-repeat;
-  background-position: top right;
+  }
 
 }
-
-.study-card{
-  background-color: var(--study);
-  background-image: url(../../../public/images/icon-study.svg);
-  background-repeat: no-repeat;
-  background-position: top right;
-
-}
-
-.exercise-card{
-  background-color: var(--exercise);
-  background-image: url(../../../public/images/icon-exercise.svg);
-  background-repeat: no-repeat;
-  background-position: top right;
-
-}
-
-.social-card{
-  background-color: var(--social);
-  background-image: url(../../../public/images/icon-social.svg);
-  background-repeat: no-repeat;
-  background-position: top right;
-
-}
-
-.self-care-card{
-  background-color: var(--selfCare);
-  background-image: url(../../../public/images/icon-self-care.svg);
-  background-repeat: no-repeat;
-  background-position: top right;
-
-}
-

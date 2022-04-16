@@ -1,0 +1,67 @@
+.user-tracking{
+  width: 70%;
+  padding: 24px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 280px));
+  column-gap: 30px;
+  row-gap: 36px;
+}
+
+.user-tracking>div{
+  width: 280px;
+  height: 248px;
+  border-radius: 16px;
+  position: relative;
+
+  background-repeat: no-repeat;
+  background-position: 90% -5%;
+
+}
+
+.work-card{
+  background-color: var(--work);
+  background-image: url(../../../public/images/icon-work.svg);
+
+}
+
+.play-card{
+  background-color: var(--play);
+  background-image: url(../../../public/images/icon-play.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+
+}
+
+.study-card{
+  background-color: var(--study);
+  background-image: url(../../../public/images/icon-study.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+
+}
+
+.exercise-card{
+  background-color: var(--exercise);
+  background-image: url(../../../public/images/icon-exercise.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+
+}
+
+.social-card{
+  background-color: var(--social);
+  background-image: url(../../../public/images/icon-social.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+
+}
+
+.self-care-card{
+  background-color: var(--selfCare);
+  background-image: url(../../../public/images/icon-self-care.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+
+}
+

@@ -1,0 +1,29 @@
+.user-tracking header span{
+  margin: 0;
+}
+
+.user-tracking header span:hover{
+  cursor: pointer;
+  color: #FFF;
+}
+
+.user-tracking header ul{
+  list-style: none;
+
+  position: absolute;
+  border-radius: 6px;
+  box-shadow: 1px 1px 8px -2px #000;
+
+  background-color: var(--darkBlue);
+  z-index: 999;
+}
+
+.user-tracking header ul li{
+  padding: 8px 12px;
+}
+
+.user-tracking header ul li:hover{
+  background-color: var(--blue);
+  cursor: pointer;
+  transition: 400ms;
+}

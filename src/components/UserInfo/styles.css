@@ -1,0 +1,31 @@
+.user-info{
+  height: 360px;
+  padding: 26px;
+  background-color: var(--blue);
+
+  border-radius: 16px;
+
+
+}
+
+.user-info>img{
+  width: 80px;
+  height: 80px;
+
+  margin-bottom: 20%;
+
+  border: 2px solid #FFF;
+  border-radius: 50%;
+
+  object-fit: cover;
+}
+
+.user-info p {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 300;
+}
+
+.user-info h1{
+  font-size: 4.2rem;
+  font-weight: 400;
+}

@@ -1,4 +1,5 @@
 import { Button } from '../Button';
+import './styles.css';
 
 export const PeriodMenu = () => {
   return (
