@@ -5,8 +5,6 @@ import { PeriodContext } from '../../context/ContextPeriod';
 
 export const TrackingCard = ({ info }) => {
   const { period } = useContext(PeriodContext);
-  console.log(period);
-  console.log('Entrei no compornente');
 
   return period == 'monthly' ? (
     <div>
