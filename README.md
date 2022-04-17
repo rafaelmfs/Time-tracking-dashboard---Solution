@@ -14,7 +14,8 @@ Os usuários devem ser capazes de:
 
 
 ### Screenshot
-//
+![Captura de tela de 2022-04-17 10-13-29](https://user-images.githubusercontent.com/80429145/163715909-03367721-704b-4cc0-b7c5-29a21dd3e3ed.png)
+
 
 ### Links
 
