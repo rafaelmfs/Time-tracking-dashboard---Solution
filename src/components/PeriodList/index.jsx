@@ -6,7 +6,7 @@ export const PeriodList = ({ setPeriod }) => {
   const [onOff, setOnOff] = useState(false);
 
   return (
-    <div>
+    <div className="period-list">
       <span onClick={() => setOnOff((prevState) => !prevState)}>
         {!onOff && (
           <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
@@ -52,17 +52,6 @@ export const PeriodList = ({ setPeriod }) => {
         </ul>
       )}
     </div>
-    // <select className="select-period" onChange={(e) => setPeriod(e.target.value)}>
-    //   <option value="daily" selected={state}>
-    //     Daily
-    //   </option>
-    //   <option value="weekly" selected={state}>
-    //     Weekly
-    //   </option>
-    //   <option value="monthly" selected={state}>
-    //     Monthly
-    //   </option>
-    // </select>
   );
 };
 

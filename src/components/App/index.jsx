@@ -38,7 +38,11 @@ export const App = () => {
           <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">
             Frontend Mentor
           </a>
-          . Coded by <a href="#">Your Name Here</a>.
+          . Coded by{' '}
+          <a href="https://github.com/rafaelmfs/Time-tracking-dashboard---Solution" target="__blank">
+            Rafael Marques
+          </a>
+          .
         </footer>
       </PeriodContextProvider>
     </div>

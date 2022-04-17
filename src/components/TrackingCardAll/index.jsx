@@ -75,7 +75,7 @@ export const TrackingCardAll = ({ info, className }) => {
       setPeriod={setPeriodPerCard}
     />
   ) : (
-    <p> Not found</p>
+    <p>Not found</p>
   );
 };
 

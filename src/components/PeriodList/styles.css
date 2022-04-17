@@ -1,13 +1,13 @@
-.user-tracking header span{
+.period-list span{
   margin: 0;
 }
 
-.user-tracking header span:hover{
+.period-list span:hover{
   cursor: pointer;
   color: #FFF;
 }
 
-.user-tracking header ul{
+.period-list ul{
   list-style: none;
 
   position: absolute;
@@ -18,11 +18,11 @@
   z-index: 999;
 }
 
-.user-tracking header ul li{
+.period-list ul li{
   padding: 8px 12px;
 }
 
-.user-tracking header ul li:hover{
+.period-list ul li:hover{
   background-color: var(--blue);
   cursor: pointer;
   transition: 400ms;
