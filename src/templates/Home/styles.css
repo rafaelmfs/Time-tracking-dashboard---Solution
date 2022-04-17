@@ -27,6 +27,7 @@ html {
 
 
 body{
+  height: 100vh;
   font-family: 'Rubik', sans-serif;
   font-size: 1.8rem;
   background-color: var(--veryDarkBlue);
