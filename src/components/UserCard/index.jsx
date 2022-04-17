@@ -4,9 +4,9 @@ import './styles.css';
 
 export const UserCard = () => {
   return (
-    <section className="user-card">
+    <div className="user-card">
       <UserInfo />
       <PeriodMenu />
-    </section>
+    </div>
   );
 };
