@@ -89,6 +89,10 @@
     margin-top: 5%;
 
   }
+
+  .attribution {
+    margin-top: 50px;
+  }
 }
 
 @media (max-width: 320px){

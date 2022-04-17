@@ -32,18 +32,18 @@ export const App = () => {
               />
             ))}
           </section>
+          <footer className="attribution">
+            Challenge by{' '}
+            <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">
+              Frontend Mentor
+            </a>
+            . Coded by{' '}
+            <a href="https://github.com/rafaelmfs/Time-tracking-dashboard---Solution" target="__blank">
+              Rafael Marques
+            </a>
+            .
+          </footer>
         </main>
-        <footer className="attribution">
-          Challenge by{' '}
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">
-            Frontend Mentor
-          </a>
-          . Coded by{' '}
-          <a href="https://github.com/rafaelmfs/Time-tracking-dashboard---Solution" target="__blank">
-            Rafael Marques
-          </a>
-          .
-        </footer>
       </PeriodContextProvider>
     </div>
   );
