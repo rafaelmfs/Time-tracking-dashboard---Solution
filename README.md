@@ -14,12 +14,13 @@ Os usuários devem ser capazes de:
 
 
 ### Screenshot
-//
+![Captura de tela de 2022-04-17 10-13-29](https://user-images.githubusercontent.com/80429145/163715909-03367721-704b-4cc0-b7c5-29a21dd3e3ed.png)
+
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://www.frontendmentor.io/solutions/time-tracking-dashboard-solution-whit-react-rkLES5YNc
+- Live Site URL: https://timetackdash.netlify.app/
 
 ## Meu processo
 
