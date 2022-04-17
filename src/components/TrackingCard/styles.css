@@ -24,6 +24,10 @@
 
 }
 
+.user-tracking header h1{
+  font-size: 1.8rem;
+}
+
 .user-tracking .card-content{
   margin-top: 12%;
 

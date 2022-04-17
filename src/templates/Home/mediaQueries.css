@@ -3,6 +3,10 @@
     font-size: 50%;
   }
 
+  .container {
+    align-items: start;
+  }
+
   .user-section{
     width: 25%;
   }
