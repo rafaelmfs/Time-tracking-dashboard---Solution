@@ -19,7 +19,7 @@ Os usuários devem ser capazes de:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: https://www.frontendmentor.io/solutions/time-tracking-dashboard-solution-whit-react-rkLES5YNc
 - Live Site URL: https://timetackdash.netlify.app/
 
 ## Meu processo
